@@ -121,4 +121,27 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+// Obtener elementos
+const smallImage = document.getElementById("smallImage");
+const modal = document.getElementById("imageModal");
+const largeImage = document.getElementById("largeImage");
+const closeModal = document.getElementById("closeModal");
+
+// Cuando se hace clic en la imagen pequeña, se abre el modal con la imagen grande
+smallImage.onclick = function() {
+  modal.style.display = "flex"; // Mostrar el modal
+  largeImage.src = this.src;  // Usar la misma imagen pero en tamaño grande
+};
+
+// Cuando se hace clic en el botón de cerrar, cerrar el modal
+closeModal.onclick = function() {
+  modal.style.display = "none"; // Ocultar el modal
+};
+
+// Cuando se hace clic fuera de la imagen, también cerrar el modal
+window.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
 
