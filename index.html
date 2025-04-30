@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEOMAR - Portafolio</title>
+
+  <title>Ángel León | Desarrollador Full Stack en México - Portafolio Profesional</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Portafolio profesional de Ángel León, desarrollador full stack de aplicaciones web y móviles en México. Especializado en HTML, CSS, JavaScript, Kotlin y soluciones digitales.">
+  <meta name="keywords" content="portafolio, desarrollador, full stack, software, web, móvil, México, HTML, CSS, JavaScript, Kotlin, Angular, Firebase, desarrollo">
+  <meta name="author" content="Ángel León">
+  <meta name="robots" content="index, follow">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!-- Custom CSS link -->
+  <!-- Estilos -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Google Font link -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -31,12 +39,20 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="/assets/images/fotoperfil.webp" alt="Angel leon" width="80">
-        </figure>
+       <!-- Imagen pequeña -->
+<figure class="avatar-box">
+  <img src="assets/images/fotodeperfil.png" alt="Angel Leon" width="80" id="smallImage">
+</figure>
+
+<!-- Modal para imagen grande -->
+<div id="imageModal" class="modal">
+  <span class="close" id="closeModal">&times;</span>
+  <img class="modal-content" id="largeImage">
+</div>
+
 
         <div class="info-content">
-          <h1 class="name" title="Angel leon">ANGEL LEON</h1>
+          <h3 class="name" title="Angel leon">Angel Manuel </br> Leon Martinez</h3>
 
           <p class="title">Ing. Desarrollo De Software</p>
         </div>
@@ -124,13 +140,13 @@
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://x.com/leomar367" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
           
           <li class="social-item">
-            <a href="hhttps://www.linkedin.com/in/%C3%A1ngel-manuel-le%C3%B3n-martinez-39789a270/" class="social-link">
+            <a href="https://www.linkedin.com/in/angel-manuel-leon-mart%C3%ADnez-39789a270/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -181,111 +197,92 @@
 
       <!-- ACERCA DE MI -->
 
-      <article class="about active" data-page="acerca de">
+<article class="about active" data-page="acerca de">
 
-        <header>
-          <h2 class="h2 article-title">Acerca de mí</h2>
-          <a class="h2 article-title" href="/index.html">Inicio</a>
-        </header>
+  <header>
+    <h2 class="h2 article-title">Acerca de mí</h2>
+    <a class="h2 article-title" href="/index.html">Inicio</a>
+  </header>
 
-        <section class="about-text">
-          <p>
-            Soy un desarrollador apasionado por la creación de aplicaciones web y móviles limpias con
-            funcionalidades intuitivas. Disfruto el proceso de convertir ideas en realidad usando soluciones creativas. Siempre
-            tengo curiosidad por aprender nuevas habilidades, herramientas y conceptos. Además de trabajar en varios proyectos
-            full stack en solitario, he trabajado con equipos creativos, lo que implica stand-ups y comunicaciones diarias,
-            control de fuentes y gestión de proyectos.
+  <section class="about-text">
+    <p>
+      Soy un desarrollador apasionado por crear aplicaciones web y móviles limpias, funcionales e intuitivas. Me motiva convertir ideas en soluciones reales mediante tecnología y creatividad. Siempre estoy en constante aprendizaje de nuevas herramientas, lenguajes y conceptos.
+    </p>
+
+    <p>
+      He trabajado tanto en proyectos full stack individuales como en equipos colaborativos, participando en stand-ups, control de versiones y gestión de proyectos. Esta experiencia me ha permitido adaptarme a diferentes entornos de desarrollo.
+    </p>
+
+    <p>
+      Me especializo en construir interfaces de usuario sencillas, responsivas y enfocadas en la experiencia del usuario. Además, tengo sólidos conocimientos en bases de datos relacionales y no relacionales.
+    </p>
+
+    <p style="margin-top: 1rem;">
+      Siempre estoy abierto a nuevos desafíos y oportunidades para seguir creciendo como desarrollador.
+    </p>
+  </section>
+
+  <a class="form-btn2" href="pdf/CV-AngelManuelLeonMartinez.pdf" target="_blank">Ver mi CV</a>
+  <br><br>
+
+  <!-- Servicios -->
+  <section class="service">
+    <h3 class="h3 service-title">¿Necesitas un producto creativo?</h3>
+
+    <ul class="service-list">
+
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-design.svg" alt="Frontend icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Desarrollo Frontend</h4>
+          <p class="service-item-text">
+            Diseño y desarrollo de interfaces modernas, responsivas y accesibles con HTML, CSS, JavaScript y React.
           </p>
+        </div>
+      </li>
 
-          <p>
-            Desarrollo interfaces de usuario sencillas, intuitivas y con capacidad de respuesta que ayudan a los usuarios a
-            hacer las cosas con menos esfuerzo y tiempo con estas tecnologías.
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-dev.svg" alt="Backend icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Desarrollo Backend</h4>
+          <p class="service-item-text">
+            Construcción de APIs robustas, manejo eficiente de bases de datos (MySQL, PostgreSQL) y lógica de servidor.
           </p>
+        </div>
+      </li>
 
-          <p>
-            Me desarrollo bien en el área de base de datos.
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-app.svg" alt="Mobile app icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Aplicaciones móviles</h4>
+          <p class="service-item-text">
+            Desarrollo de apps para Android en Kotlin con integración de Firebase, sincronización local y autenticación.
           </p>
-        </section>
+        </div>
+      </li>
 
-        <a class="form-btn2" href="pdf/CV-AngelManuelLeonMartinez.pdf">Mostrar CV.</a>
-        <br>
-        
-    
-        <!-- Servicios -->
-        <br>
-        <section class="service">
+      <li class="service-item">
+        <div class="service-icon-box">
+          <img src="./assets/images/icon-photo.png" alt="language icon" width="40">
+        </div>
+        <div class="service-content-box">
+          <h4 class="h4 service-item-title">Inglés Técnico</h4>
+          <p class="service-item-text">
+            Nivel B1 certificado (TOEFL). Capacidad de comunicación técnica en proyectos internacionales.
+          </p>
+        </div>
+      </li>
 
-          <h3 class="h3 service-title">¿Necesita un producto creativo?</h3>
+    </ul>
+  </section>
 
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desarrollador Frontend</h4>
-
-                <p class="service-item-text">
-                  Diseño Web El diseño más moderno y de alta calidad realizado a nivel profesional.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desarrollo Backend</h4>
-
-                <p class="service-item-text">
-                  Me desarrollo bien en el área de base de datos.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desarrollador Móvil</h4>
-
-                <p class="service-item-text">
-                  Desarrollo profesional de aplicaciones para Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Inglés</h4>
-
-                <p class="service-item-text">
-                  Tengo un nivel de ingles B1 comprobado mediante un examen Tolft.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
+</article>
 
         <!-- Testimonios -->
 
@@ -409,236 +406,97 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Experiencia</h3>
           </div>
-
+        
           <ol class="timeline-list">
-
+        
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Appets</h4>
-
+              <h4 class="h4 timeline-item-title">SoftdevAgency</h4>
+              <span>2023 — Actualidad</span>
+              <p class="timeline-text">
+                Fundador de SoftdevAgency, una agencia de desarrollo de software y diseño web con clientes en México, Canadá y EE.UU. He trabajado con gobiernos municipales, empresas privadas y profesionales independientes.
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">App móvil multifuncional</h4>
+              <span>2024 — Actualidad</span>
+              <p class="timeline-text">
+                Desarrollo de una aplicación Android multifuncional con Kotlin y Firebase, con funcionalidades como gestión de gastos, nutrición, rutinas, y recomendaciones inteligentes. Integra autenticación y sincronización local/offline.
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Feria empresarial y Tapachula Digital</h4>
+              <span>2024</span>
+              <p class="timeline-text">
+                Participación en la feria empresarial de Tapachula promoviendo el programa Tapachula Digital, donde ofrecí páginas web básicas a emprendedores, ayudando a digitalizar negocios locales.
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Appets (proyecto universitario)</h4>
               <span>2021 — 2022</span>
-
               <p class="timeline-text">
-                Mi equipo gana primer lugar el proyecto final de integradores dominado Appets lo cual el proceso me brinda experiencia
+                Ganador del primer lugar en el proyecto integrador “Appets”. La experiencia fortaleció mi capacidad de desarrollo en equipo, liderazgo técnico y presentación de resultados.
               </p>
-
             </li>
-
+        
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Estancia 1 y 2</h4>
-
-              <span>2022 — 2022</span>
-
+              <h4 class="h4 timeline-item-title">Estancias profesionales</h4>
+              <span>2022</span>
               <p class="timeline-text">
-                Estancia 1 y 2 en este proceso brindo un servicio total 220 horas a una empresa dividido en dos partes con el propósito de poner aprueba mis conocimientos en los cuales sin problemas logro completar los proyectos asignados.
+                Colaboré con una empresa durante mis estancias profesionales, completando con éxito todos los proyectos asignados en un total de 220 horas de servicio dividido en dos etapas.
               </p>
-
             </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Experiencia cursos</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                La experiencia que dejo cada curso que tome fue única pues mientras se aprendía se hacía un proyecto que se le enviaba amis profesores online quienes después se encargaría de revisar que mi proyecto estuviera realizado de la manera correcta.
-              </p>
-
-            </li>
-
+        
           </ol>
-
+        
         </section>
-
+        
         <section class="skill">
-
+        
           <h3 class="h3 skills-title">Mis habilidades</h3>
-
+        
           <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">HTML/HMTL5</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CSS/CSS3</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JAVASCRIPT</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">REACT</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">POSTGRES</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">FIREBASE</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">BOOSTRAP</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-         
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">GIT</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-            
-
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">PHP</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">PYTHON</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JAVA</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-         
-
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">MYSQL</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">DJANGO</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">HTML / HTML5</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">CSS / CSS3</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">JavaScript</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">React</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Kotlin</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Firebase</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">PostgreSQL</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">MySQL</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Bootstrap</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Git / GitHub</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">PHP</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Python</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Java</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">SQLite</h5><data value="99">99%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:99%;"></div></div></li>
+        
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Django</h5><data value="75">75%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:75%;"></div></div></li>
+        
           </ul>
-
+        
         </section>
+        
 
       </article>
 
@@ -728,7 +586,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="/assets/images/tutoria.jpg" alt="dsm." loading="lazy">
+                  <img src="./assets/images/tutoria.jpg" alt="dsm." loading="lazy">
                 </figure>
 
                 <h3 class="project-title">GESTION-TUTORIA</h3>
@@ -826,342 +684,275 @@
     </style>
  
       
-          <!-- Sección de Historial -->
-          <article class="blog" data-page="historial">
-            <header>
-              <h2 class="h2 article-title">Historial</h2>
-            </header>
-            <section class="blog-posts">
-              <ul class="blog-posts-list">
-                <!-- ENTRADA DE BLOG 1 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-01.webp" alt="Design conferences in 2022" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <p class="blog-category">Reconocimiento</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-04-22">Abril 22, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Appets</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Reconocimiento por sacar primer lugar al mejor proyecto presentado.
-                      </p>
-                    </div>
-                  </a>
-                </li>
+       <!-- Sección de Historial -->
+<article class="blog" data-page="historial">
+  <header>
+    <h2 class="h2 article-title">Historial</h2>
+  </header>
+  <section class="blog-posts">
+    <ul class="blog-posts-list">
       
-                <!-- ENTRADA DE BLOG 2 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-1.webp" alt="Best fonts every designer" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Reconocimiento</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-06-10">Junio 10, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Participación</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Reconocimiento por participar en la exposición de integradores.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- CONTINUA CON EL RESTO DE LAS ENTRADAS DE BLOG -->
-      
-                <!-- ENTRADA DE BLOG 5 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-4.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">Diciembre 22, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por concluir el curso de creatividad e innovación.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 6 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-6.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">Diciembre 22, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de creación de filtros fáciles para Instagram con Spark AR.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 7 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-7.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">Diciembre 22, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de fotografía con tu teléfono.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 8 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-8.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Design</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">22 Diciembre, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de creación de filtros 3D con Spark AR.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 9 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-9.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">22 Diciembre, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de monetización de filtros de realidad aumentada.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 10 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-10.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">22 diciembre, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de aprende a crear tu web desde cero con HTML y CSS.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 11 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-11.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">22 diciembre, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de WhatsApp clone app utilizando Android y Firebase.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 12 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-12.webp" alt="The forgotten art of spacing" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">22 diciembre, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de crear sistemas de marketplace con PHP 8 y base de datos MySQL.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-                <!-- ENTRADA DE BLOG 13 -->
-                <li class="blog-post-item">
-                  <a href="#">
-                    <!-- IMAGEN -->
-                    <figure class="blog-banner-box">
-                      <img src="./assets/images/diploma-5.webp" alt="Design digest #79" loading="lazy">
-                    </figure>
-                    <!-- CONTENIDO DE LA ENTRADA -->
-                    <div class="blog-content">
-                      <!-- METADATOS -->
-                      <div class="blog-meta">
-                        <p class="blog-category">Diploma</p>
-                        <span class="dot"></span>
-                        <time datetime="2022-12-22">22 diciembre, 2022</time>
-                      </div>
-                      <!-- TÍTULO -->
-                      <h3 class="h3 blog-item-title">Diploma</h3>
-                      <!-- DESCRIPCIÓN -->
-                      <p class="blog-text">
-                        Diploma por haber concluido el curso de realidad aumentada y rastreo de espacios.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-      
-              </ul>
-            </section>
-          </article>
+      <!-- Entrada 1 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-01.webp" alt="Reconocimiento Appets" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Reconocimiento</p>
+              <span class="dot"></span>
+              <time datetime="2022-04-22">22 de abril de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Appets</h3>
+            <p class="blog-text">
+              Primer lugar al mejor proyecto presentado, otorgado por su destacada propuesta y ejecución.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 2 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-1.webp" alt="Participación en integradores" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Reconocimiento</p>
+              <span class="dot"></span>
+              <time datetime="2022-06-10">10 de junio de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Participación</h3>
+            <p class="blog-text">
+              Reconocimiento por participar activamente en la exposición de proyectos integradores.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 5 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-4.webp" alt="Curso de creatividad e innovación" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Diploma</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Curso de Creatividad e Innovación</h3>
+            <p class="blog-text">
+              Finalización del curso enfocado en el desarrollo de habilidades creativas e innovadoras.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 6 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-6.webp" alt="Curso de filtros Instagram con Spark AR" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Diploma</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Filtros para Instagram</h3>
+            <p class="blog-text">
+              Conclusión del curso sobre creación de filtros simples para Instagram utilizando Spark AR.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 7 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-7.webp" alt="Curso de fotografía móvil" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Diploma</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Fotografía con Teléfono</h3>
+            <p class="blog-text">
+              Diploma por concluir el curso de técnicas fotográficas aplicadas desde el móvil.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 8 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-8.webp" alt="Curso de filtros 3D Spark AR" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Design</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Filtros 3D en Spark AR</h3>
+            <p class="blog-text">
+              Finalización del curso de creación de filtros 3D utilizando Spark AR Studio.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 9 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-9.webp" alt="Curso de monetización RA" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Diploma</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Monetización de Filtros</h3>
+            <p class="blog-text">
+              Curso completado sobre estrategias para monetizar filtros de realidad aumentada.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 10 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-10.webp" alt="Curso de HTML y CSS" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Diploma</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Desarrollo Web</h3>
+            <p class="blog-text">
+              Finalización del curso para crear sitios web desde cero con HTML y CSS.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 11 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-11.webp" alt="Curso de app tipo WhatsApp" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Diploma</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Aplicación Tipo WhatsApp</h3>
+            <p class="blog-text">
+              Curso finalizado sobre desarrollo de una app de mensajería con Android y Firebase.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 12 -->
+      <li class="blog-post-item">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/diploma-12.webp" alt="Curso de marketplace con PHP y MySQL" loading="lazy">
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Diploma</p>
+              <span class="dot"></span>
+              <time datetime="2022-12-22">22 de diciembre de 2022</time>
+            </div>
+            <h3 class="h3 blog-item-title">Sistema Marketplace</h3>
+            <p class="blog-text">
+              Diploma por completar el curso de desarrollo de sistemas marketplace con PHP 8 y MySQL.
+            </p>
+          </div>
+        </a>
+      </li>
+
+      <!-- Entrada 13 (pendiente, incompleta en tu mensaje) -->
+      <!-- Puedes proporcionarme el resto para completarlo -->
+
+    </ul>
+  </section>
+</article>
+
      
 
+<!-- CONTACTO -->
+<article class="contact" data-page="contacto">
 
-      <!--
-        - #CONTACT
-      -->
+  <header>
+    <h2 class="h2 article-title">Contacto</h2>
+  </header>
 
-      <article class="contact" data-page="contacto">
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123376.59050915322!2d-92.36036341858056!3d14.908181418687523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0f395e71c1b1%3A0x5d28b9b800b8228b!2sTapachula%2C%20Chis.!5e0!3m2!1ses-419!2smx!4v1737139879069!5m2!1ses-419!2smx"
+        width="400" height="300" loading="lazy"></iframe>
+    </figure>
+  </section>
 
-        <header>
-          <h2 class="h2 article-title">Contacto</h2>
-        </header>
+  <section class="contact-form">
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123376.59050915322!2d-92.36036341858056!3d14.908181418687523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0f395e71c1b1%3A0x5d28b9b800b8228b!2sTapachula%2C%20Chis.!5e0!3m2!1ses-419!2smx!4v1737139879069!5m2!1ses-419!2smx"
-             
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+    <h3 class="h3 form-title">Contactar</h3>
 
-        <section class="contact-form">
+    <form id="whatsapp-form" class="form" onsubmit="enviarWhatsApp(); return false;">
 
-          <h3 class="h3 form-title">contactar</h3>
+      <div class="input-wrapper">
+        <input type="text" name="fullname" id="fullname" class="form-input" placeholder="Nombre completo" required>
+        <input type="email" name="email" id="email" class="form-input" placeholder="Email" required>
+      </div>
 
-          <form action="#" class="form" data-form>
+      <textarea name="message" id="message" class="form-input" placeholder="Escribe Mensaje..." required></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Nombre completo" required data-form-input>
+      <button class="form-btn" type="submit">
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Enviar Mensaje</span>
+      </button>
 
-              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
-            </div>
+    </form>
 
-            <textarea name="message" class="form-input" placeholder="Escribe Mensaje..." required data-form-input></textarea>
+    <script>
+      function enviarWhatsApp() {
+        const nombre = document.getElementById("fullname").value.trim();
+        const correo = document.getElementById("email").value.trim();
+        const mensaje = document.getElementById("message").value.trim();
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Enviar Mensaje</span>
-            </button>
+        const texto = `Hola, soy ${nombre}. Mi correo es: ${correo}. Mensaje: ${mensaje}`;
+        const telefono = "529622113136"; // +52 (México)
 
-          </form>
+        const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank");
+      }
+    </script>
 
-        </section>
+  </section>
 
-      </article>
-
-    </div>
-
-  </main>
-
+</article>
 
 
 
